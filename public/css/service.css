@@ -47,46 +47,46 @@ background-position: 50% 50%; */
 }
 
 .nav li {
-/* height: 30px; */
-    background-color   :brown;
+    /* height: 30px; */
+    background-color   : brown;
     text-align         : center;
     list-style-type    : none;
     padding            : 1em;
     /* margin-top      : 0.5em; */
-    flex    : auto;
-    position: relative;
+    flex               : auto;
+    position           : relative;
 
 }
 
 /* 二層選單 */
 ol {
-     position   : absolute; 
+    position   : absolute;
     margin-left: -1em;
     margin-top : 8.5%;
     padding    : 0%;
-    width      : 100%; 
-    z-index: 550;
-    display: none;
+    width      : 100%;
+    z-index    : 550;
+    display    : none;
 
 
-    
+
 }
 
 .menu li {
     margin: 0px;
     height: 2em;
 
-    
+
 }
 
 .nav li:hover {
     /* 滑鼠滑入背景變色*/
-  background-color: rgb(223, 86, 52);
-   
+    background-color: rgb(223, 86, 52);
+
 }
 
-.nav li:hover > ol{
-display: block;
+.nav li:hover>ol {
+    display: block;
 }
 
 .nav a {
@@ -100,7 +100,7 @@ display: block;
 
 
 .banner {
-    background-image : url(images/about/about_banner.jpg);
+    background-image : url(/public/images/banner_wedding.jpg);
     background-size  : cover;
     background-repeat: no-repeat;
     /* max-width     : 100%; */
@@ -143,16 +143,20 @@ display: block;
     color          : black;
 }
 
-.breadcrumb a:hover{
+.breadcrumb a:hover {
     color: tomato;
 }
-.breadcrumb span:hover{color: tomato;
+
+.breadcrumb span:hover {
+    color: tomato;
 
 }
-/* 麵包屑結束 */
+
+/* /////////////表單///////////// */
 section p {
     font-size  : 1.3em;
     font-weight: 10000;
+    text-align : center;
 }
 
 section h1 {
@@ -160,20 +164,54 @@ section h1 {
     color    : tomato;
 }
 
-.right_img {
+.form_box {
+    width         : 90%;
+    padding-bottom: 2em;
+}
 
+.form_box img {
+    float         : left;
+    width         : 46%;
+    padding-bottom: 2em;
+}
+
+h3 {
+    padding: 0;
+    margin : 0;
+}
+
+.form_box form {
 
     float: right;
+    width: 40%;
+
 }
 
-.right_img img {
-    width        : 89%;
-    margin-left  : 2em;
-    margin-bottom: 2em;
-    height       : auto;
+.form_box label {
+    max-width: 90px;
+    min-width: 90px;
+    display  : inline-block;
+
 }
 
-.left_text {}
+.form_box input,
+textarea {
+    margin-top   : 1em;
+    margin-bottom: 1em;
+    min-width    : 350px;
+    max-width    : 300px;
+}
+
+textarea {
+    min-height: 200px;
+}
+label,textarea{
+    vertical-align:middle;
+}
+
+
+
+
 
 
 /* ///////////頁尾//////////////// */
@@ -254,8 +292,41 @@ li:last-child {
 @media screen and (max-width: 767px) {
     /* // 如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS。 */
 
-    .puoduct {
-        width: 48%;
+
+    .form_box {
+        width    : 90%;
+        display  : flex;
+        flex-wrap: wrap;
+
+    }
+
+    .form_box img {
+
+        width: 100%;
+
+    }
+
+    h3 {
+        padding: 0;
+        margin : 0;
+    }
+
+    .form_box form {
+
+        float: none;
+        width: 100%;
+    }
+
+    .form_box label {
+        max-width: 90px;
+        min-width: 80px;
+        display  : inline-block;
+    }
+
+    .form_box input,
+    textarea {
+        min-width: 400px;
+        max-width: 300px;
     }
 
 
@@ -263,7 +334,6 @@ li:last-child {
         font-size: 10px;
         color    : rgb(133, 204, 52);
     }
-
 
 
 }
@@ -285,7 +355,7 @@ li:last-child {
         display: none;
     }
 
-    .puoduct {
+    .wedding_puoduct {
         width: 100%;
     }
 
@@ -294,10 +364,7 @@ li:last-child {
         color    : rgb(85, 52, 204);
     }
 
-    .store {
-        width: 100%;
 
-    }
 
     .footer_box {
         display       : inline-flex;

@@ -1,3 +1,5 @@
+
+
 .container {
     max-width   : 1140px;
     width       : 100%;
@@ -47,46 +49,46 @@ background-position: 50% 50%; */
 }
 
 .nav li {
-    /* height: 30px; */
-    background-color   : brown;
+/* height: 30px; */
+    background-color   :brown;
     text-align         : center;
     list-style-type    : none;
     padding            : 1em;
     /* margin-top      : 0.5em; */
-    flex               : auto;
-    position           : relative;
+    flex    : auto;
+    position: relative;
 
 }
 
 /* 二層選單 */
 ol {
-    position   : absolute;
+     position   : absolute; 
     margin-left: -1em;
     margin-top : 8.5%;
     padding    : 0%;
-    width      : 100%;
-    z-index    : 550;
-    display    : none;
+    width      : 100%; 
+    z-index: 550;
+    display: none;
 
 
-
+    
 }
 
 .menu li {
     margin: 0px;
     height: 2em;
 
-
+    
 }
 
 .nav li:hover {
     /* 滑鼠滑入背景變色*/
-    background-color: rgb(223, 86, 52);
-
+  background-color: rgb(223, 86, 52);
+   
 }
 
-.nav li:hover>ol {
-    display: block;
+.nav li:hover > ol{
+display: block;
 }
 
 .nav a {
@@ -100,12 +102,12 @@ ol {
 
 
 .banner {
-    background-image : url(images/store/banner_location.jpg);
+    background-image : url(/public/images/banner_custom.jpg);
     background-size  : cover;
     background-repeat: no-repeat;
     /* max-width     : 100%; */
 
-    background-color: blue;
+    /* background-color: blue; */
     padding-bottom  : 25.5%;
 }
 
@@ -142,70 +144,52 @@ ol {
     font-weight    : 1000;
     color          : black;
 }
-
-.breadcrumb a:hover {
+.breadcrumb a:hover{
     color: tomato;
 }
-
-.breadcrumb span:hover {
-    color: tomato;
+.breadcrumb span:hover{color: tomato;
 
 }
-
-p,
-h5,
-a {
-    font-size  : 0.5em;
+section p {
+    font-size  : 1.3em;
     font-weight: 10000;
-    text-align : center;
-    display    : block;
-}
-
-h1 {
-    font-size : 2rem;
-    color     : tomato;
     text-align: center;
 }
 
-.map_box {
-    width: 100%;
+section h1 {
+    font-size: 2rem;
+    color    : tomato;
+}
 
-    display  : flex;
+.wedding_puoduct_box{
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+     
+    border-bottom: 1.3em solid #fa5321;
+    border-bottom-style: groove ;
+    margin-bottom: 20%;
+}
+.wedding_puoduct img{
+   width: 100%;
+ 
+}
+.wedding_puoduct{
+    width: 33%;
 }
 
-.store_box {
-    background-color: rgb(224, 226, 226);
-    width           : 30%;
-    margin          : 0.5em;
-    padding         : 0.5em;
-
+.wedding_puoduct h2{
+    text-align: center;
+    color: tomato;
 }
-
-.store_box img {
-    width: 100%;
-
-}
-
-.map_img {
-    position: relative;
-}
-
-.map_text {
-    position       : absolute;
-    top            : 25%;
-    left           : 25%;
-    z-index        : 10;
-    /* position    :absolute; */
-    background-size: cover;
-    /* z-index     : 2; */
-    /* left        :30%;
-    top            :30%; */
-
+.wedding_puoduct p{
+    text-align: center;
+    font-size: 1.3em;
 }
 
 
-.embed-container{display:none;}
+
+
 
 
 
@@ -296,14 +280,10 @@ li:last-child {
         color    : rgb(133, 204, 52);
     }
 
-    .store_box {
-        width  : 43%;
-        margin : .1em;
-        padding: 1em;
 
+    .wedding_puoduct{
+        width: 50%;
     }
-
-
 }
 
 /* //////////////////////手機////////////////////// */
@@ -323,7 +303,7 @@ li:last-child {
         display: none;
     }
 
-    .wedding_puoduct {
+    .wedding_puoduct{
         width: 100%;
     }
 
@@ -332,10 +312,8 @@ li:last-child {
         color    : rgb(85, 52, 204);
     }
 
-    .store_box {
-        width  : 100%;
-        margin : .1em;
-        padding: 1em;
+    .store {
+        width: 100%;
 
     }
 
