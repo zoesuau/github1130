@@ -100,7 +100,7 @@ display: block;
 
 
 .banner {
-    background-image : url(/public/images/about/about_banner.jpg);
+    background-image : url(../images/about/about_banner.jpg);
     background-size  : cover;
     background-repeat: no-repeat;
     /* max-width     : 100%; */

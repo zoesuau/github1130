@@ -102,7 +102,7 @@ display: block;
 
 
 .banner {
-    background-image : url(/public/images/banner_custom.jpg);
+    background-image : url(../images/banner_custom.jpg);
     background-size  : cover;
     background-repeat: no-repeat;
     /* max-width     : 100%; */

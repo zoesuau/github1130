@@ -100,7 +100,7 @@ ol {
 
 
 .banner {
-    background-image : url(/public/images/banner_wedding.jpg);
+    background-image : url(../images/banner_wedding.jpg);
     background-size  : cover;
     background-repeat: no-repeat;
     /* max-width     : 100%; */

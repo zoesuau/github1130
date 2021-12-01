@@ -100,7 +100,7 @@ ol {
 
 
 .banner {
-    background-image : url(/public/images/store/banner_location.jpg);
+    background-image : url(../images/store/banner_location.jpg);
     background-size  : cover;
     background-repeat: no-repeat;
     /* max-width     : 100%; */
